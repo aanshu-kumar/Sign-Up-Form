@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.signup-form{
+    width: 75%;
+    margin: 150px auto;
+}
+h1{
+    font-size: 64px;
+    font-weight: 400;
+}
+.title{
+    width: 100%;
+    margin: auto;
+}
+.signupform{
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+input{
+    color: #ffff;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    font-size: 24px;
+}
+::placeholder{
+    color: white;
+}
+button{
+    margin: 20px;
+    padding: 10px 50px;
+    font-size:  20px;
+    background-color: white;
+    color: black;
+    font-weight: 100;
+}
+
