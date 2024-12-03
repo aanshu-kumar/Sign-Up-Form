@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up-form</title>
-    <link href="./style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="favicon.svg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup-form</title>
 
-</head>
-<body>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+  </head>
+  <body>
+    <header>Enter your details to signup.</header>
     <div class="signup-form">
-        <h1>Signup</h1>
-        <form class="signupform">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <input type="text" placeholder="Confirm Password">
-        <input type="date" placeholder="DD/MM/YYYY">
+      <h1>Signup</h1>
+      <form class="signupform">
+        <input type="text" placeholder="Full Name" required/>
+        <input type="email" 
+        placeholder="Email"
+        id="email"
+        title="Please enter a valid email address."
+        required 
+        />
+        <input type="password" 
+        placeholder="Password"
+        id="password" 
+        minlength="8" 
+        pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@$!%*?&#]).{8,}" 
+        title="Password must be at least 8 characters long, contain an uppercase letter, a lowercase letter, a number, and a special character." 
+        required 
+        />
+        <input type="text" placeholder="Confirm Password" required />
+        <input type="date" placeholder="DD/MM/YYYY" required />
         <div class="radio-button">
-            <input type="radio" value="student" name="account-type">
-            <label>Student</label>
-            <input type="radio" value="Enployee" name="account-type">
-            <label>Employee</label>
+          <input type="radio" value="student" name="account-type" required />
+          <label>Student</label>
+          <input type="radio" value="Enployee" name="account-type" required />
+          <label>Employee</label>
         </div>
         <div class="checkbox-button">
-            <input type="checkbox" value="agree">
-            <label>I agree to all the Terms and conditions</label>
+          <input type="checkbox" value="agree" required />
+          <label>I agree to all the Terms and conditions</label>
         </div>
-    </form>
-    <button>Signup</button>
+        <button type="submit">Signup</button>
+      </form>
+      
     </div>
-</body>
+    <footer>All rights reserved</footer>
+  </body>
 </html>

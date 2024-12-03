@@ -5,9 +5,14 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
 }
+header,footer{
+    text-align: center;
+    color: gray;
+
+}
 .signup-form{
     width: 75%;
-    margin: 150px auto;
+    margin: 50px auto;
 }
 h1{
     font-size: 64px;
@@ -31,10 +36,14 @@ input{
     background-color: transparent;
     font-size: 24px;
 }
-::placeholder{
+input::placeholder{
     color: white;
 }
+input:focus{
+    outline: none;
+}
 button{
+    width: fit-content;
     margin: 20px;
     padding: 10px 50px;
     font-size:  20px;
